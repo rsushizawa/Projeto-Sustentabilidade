@@ -1,186 +1,215 @@
 {
-    "page1":{
-        "graph1":{
-            "data":{
-                "values": [15, 18, 18, 24, 25],
-                "labels": ["Reduzir Espaço", "Melhorar Perfomance", "Menor Impacto Ambiental", "Reduzir Custos", "Reduzir Consumo de Energia"],
-                "marker": {
-                    "colors": ["#DBF1D6", "#75C477","#AEDEA7","#37A055","#0B7734"]
-                },
-                "domain": {"column": 0},
-                "name": "Green IT",
-                "hoverinfo": "label+percent+name",
-                "type": "pie"
+    "page1_porQueAdotam": {
+        "data": {
+            "values": [15, 18, 18, 24, 25],
+            "labels": ["Reduzir Espaço", "Melhorar Perfomance", "Menor Impacto Ambiental", "Reduzir Custos", "Reduzir Consumo de Energia"],
+            "marker": {
+                "colors": ["#DBF1D6", "#75C477","#AEDEA7","#37A055","#0B7734"]
             },
-            "layout":{
-                "title": {
-                    "text": "Por que as empresas adotam a TI verde?"
-                },
-                "height": 600,
-                "width": 900,
-                "margin": {
-                "b": 40
-                },
-                "family": "font-Title",
-                "showlegend": true,
-                "paper_bgcolor": "rgba(0,0,0,0)",
-                "plot_bgcolor": "rgba(0,0,0,0)",
-                "grid": {"rows": 1, "columns": 1},
-                "annotations": [{
-                "x": 0,
-                "y": 0, 
-                "xref": "paper",
-                "yref": "paper",
-                "text": "<b>Fonte:</b> IFES (2013)",
-                "showarrow": false,
-                "xanchor": "left",
-                "yanchor": "bottom",
-                "font": 
-                {
-                    "size": 10,
-                    "color": "#0000000"
-                }
-                }]
-            } 
+            "domain": {"column": 0},
+            "name": "Green IT",
+            "hoverinfo": "label+percent+name",
+            "type": "pie"
         },
-        "graph2": {
-            "data": [
-                {
-                  "x": [
-                    2022,
-                    2023,
-                    2024,
-                    2025,
-                    2026
-                  ],
-                  "y": [
-                    460,
-                    500,
-                    550,
-                    600,
-                    650
-                  ],
-                  "name": "Projeção Otimista (com Green IT)",
-                  "type": "scatter",
-                  "mode": "lines+markers",
-                  "line": {
-                    "color": "rgb(60, 179, 113)",
-                    "width": 3
-                  },
-                  "marker": {
-                    "color": "rgb(60, 179, 113)",
-                    "size": 8
-                  }
-                },
-                {
-                  "x": [
-                    2022,
-                    2023,
-                    2024,
-                    2025,
-                    2026
-                  ],
-                  "y": [
-                    460,
-                    580,
-                    710,
-                    900,
-                    1050
-                  ],
-                  "name": "Projeção de Alta Demanda",
-                  "type": "scatter",
-                  "mode": "lines+markers",
-                  "line": {
-                    "color": "rgb(215, 60, 60)",
-                    "width": 3,
-                    "dash": "dot"
-                  },
-                  "marker": {
-                    "color": "rgb(215, 60, 60)",
-                    "size": 8
-                  }
-                },
-                {
-                  "x": [
-                    2022,
-                    2023,
-                    2024,
-                    2025,
-                    2026,
-                    2026,
-                    2025,
-                    2024,
-                    2023,
-                    2022
-                  ],
-                  "y": [
-                    460,
-                    580,
-                    710,
-                    900,
-                    1050,
-                    650,
-                    600,
-                    550,
-                    500,
-                    460
-                  ],
-                  "name": "Economia Potencial",
-                  "type": "scatter",
-                  "mode": "none",
-                  "fill": "toself",
-                  "fillcolor": "rgba(215, 60, 60, 0.4)",
-                  "line": {
-                    "color": "transparent"
-                  },
-                  "showlegend": true
-                }
-            ],
-            "layout": {
-                "title": "Projeção do Consumo Global de Energia por Data Centers",
-                "xaxis": {
-                  "title": "Ano",
-                  "tickvals": [
-                    2022,
-                    2023,
-                    2024,
-                    2025,
-                    2026
-                  ],
-                  "showgrid": true,
-                  "gridcolor": "#eee",
-                  "griddash": "dash"
-                },
-                "yaxis": {
-                  "title": "Consumo de Eletricidade (TWh)",
-                  "range": [
-                    400,
-                    1100
-                  ],
-                  "showgrid": true,
-                  "gridcolor": "#eee",
-                  "griddash": "dash"
-                },
-                "legend": {
-                  "x": 0.01,
-                  "y": 0.99,
-                  "bordercolor": "#444",
-                  "borderwidth": 1
-                },
-                "plot_bgcolor": "white",
-                "annotations": [
-                  {
-                    "text": "<i>Fonte: Agência Internacional de Energia (IEA) - Relatório Electricity 2024</i>",
-                    "showarrow": false,
-                    "xref": "paper",
-                    "yref": "paper",
-                    "x": 0.5,
-                    "y": -0.15,
-                    "xanchor": "center",
-                    "yanchor": "top"
-                  }
-                ]
-            }
+        "layout": {
+            "title": "Por que as empresas adotam a TI verde?",
+            "height": 600, "width": 600,
+            "margin": {"b": 40},
+            "font": {"family": "var(--font-Title)"},
+            "showlegend": true,
+            "paper_bgcolor": "rgba(0,0,0,0)",
+            "plot_bgcolor": "rgba(0,0,0,0)",
+            "annotations": [{
+                "x": 0, "y": 0, "xref": "paper", "yref": "paper",
+                "text": "<b>Fonte:</b> IFES (2013)", "showarrow": false,
+                "xanchor": "left", "yanchor": "bottom"
+            }]
+        } 
+    },
+    "page1_projecaoConsumoEnergia": {
+        "data": [
+            { "x": [2022, 2023, 2024, 2025, 2026], "y": [460, 500, 550, 600, 650], "name": "Projeção Otimista (com Green IT)", "type": "scatter", "mode": "lines+markers", "line": {"color": "rgb(60, 179, 113)", "width": 3}, "marker": {"color": "rgb(60, 179, 113)", "size": 8} },
+            { "x": [2022, 2023, 2024, 2025, 2026], "y": [460, 580, 710, 900, 1050], "name": "Projeção de Alta Demanda", "type": "scatter", "mode": "lines+markers", "line": {"color": "rgb(215, 60, 60)", "width": 3, "dash": "dot"}, "marker": {"color": "rgb(215, 60, 60)", "size": 8} },
+            { "x": [2022, 2023, 2024, 2025, 2026, 2026, 2025, 2024, 2023, 2022], "y": [460, 580, 710, 900, 1050, 650, 600, 550, 500, 460], "name": "Economia Potencial", "type": "scatter", "mode": "none", "fill": "toself", "fillcolor": "rgba(215, 60, 60, 0.4)", "showlegend": true }
+        ],
+        "layout": {
+            "title": "Projeção do Consumo Global de Energia por Data Centers",
+            "xaxis": { "title": "Ano", "tickvals": [2022, 2023, 2024, 2025, 2026], "gridcolor": "#eee", "griddash": "dash" },
+            "yaxis": { "title": "Consumo de Eletricidade (TWh)", "range": [400, 1100], "gridcolor": "#eee", "griddash": "dash" },
+            "legend": { "x": 0.01, "y": 0.99, "bordercolor": "#444", "borderwidth": 1 },
+            "plot_bgcolor": "rgba(0,0,0,0)", "paper_bgcolor": "rgba(0,0,0,0)",
+            "height": 600, "width": 600,
+            "annotations": [{
+                "text": "<i>Fonte: Agência Internacional de Energia (IEA) - Relatório Electricity 2024</i>",
+                "showarrow": false, "xref": "paper", "yref": "paper", "x": 0.5, "y": -0.15,
+                "xanchor": "center", "yanchor": "top"
+            }]
+        }
+    },
+    "page1_composicaoLixo": {
+        "data": {
+            "values": [37.5, 17, 25, 7, 1.25, 10, 2.5],
+            "labels": ["Materiais Ferrosos", "Cobre", "Plásticos", "Alumínio", "Papel e Embalagem", "Resíduos não recicláveis", "Chumbo"],
+            "marker": { "colors": ["#4285F4", "#DB4437", "#F4B400", "#0F9D58", "#9C27B0", "#795548", "#212121"] },
+            "type": "pie", "hoverinfo": "label+percent"
+        },
+        "layout": {
+            "title": "Composição Média do Lixo Eletrônico por Tonelada",
+            "height": 600, "width": 600, "showlegend": true,
+            "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "rgba(0,0,0,0)"
+        }
+    },
+    "page1_utilizacaoDatacenters": {
+        "data": {
+            "values": [10, 32, 58],
+            "labels": ["Datacenters Multi-Tenant", "Cloud Datacenters", "Datacenters Corporativos"],
+            "type": "pie", "hole": 0.4, "hoverinfo": "label+percent"
+        },
+        "layout": {
+            "title": "Utilização de Datacenters por Segmento de Negócio",
+            "height": 600, "width": 600, "showlegend": true,
+            "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "rgba(0,0,0,0)"
+        }
+    },
+    "page1_gastosAguaTI": {
+        "data": {
+            "values": [14.4, 2.5, 32.2, 50.8],
+            "labels": ["Geração de energia", "Uso indireto", "Fabricação de Hardware", "Data-Centers"],
+            "type": "pie", "hole": 0.4, "hoverinfo": "label+percent"
+        },
+        "layout": {
+            "title": "Distribuição dos Gastos d'água na TI",
+            "height": 600, "width": 600, "showlegend": true,
+            "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "rgba(0,0,0,0)"
+        }
+    },
+    "page2_distribuicaoConsumoDC": {
+        "data": {
+            "values": [40, 43, 5, 12],
+            "labels": ["Resfriamento", "Servidores", "Rede", "Outros"],
+            "type": "pie", "hoverinfo": "label+percent"
+        },
+        "layout": {
+            "title": "Distribuição Média do Consumo de Energia em um Data Center",
+            "height": 600, "width": 600, "showlegend": true,
+            "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "rgba(0,0,0,0)"
+        }
+    },
+    "page2_impactoVirtualizacao": {
+        "data": [
+            { "y": ["Tradicional", "Virtualizada"], "x": [68, 10], "type": "bar", "orientation": "h", "marker": {"color": ["#d32f2f", "#388e3c"]} }
+        ],
+        "layout": {
+            "title": "Impacto da Virtualização no Consumo Anual de Energia (MWh)",
+            "height": 400, "width": 600,
+            "xaxis": {"title": "Consumo Anual (MWh)"},
+            "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "rgba(0,0,0,0)"
+        }
+    },
+    "page3_consumoRelativoAgua": {
+        "data": [
+            { "x": ["Apenas água", "Ar e água", "Apenas ar"], "y": [100, 40, 0], "type": "bar", "marker": {"color": "#45a9d1"} }
+        ],
+        "layout": {
+            "title": "Consumo relativo de água por método de resfriamento",
+            "yaxis": {"title": "Consumo Relativo (%)", "range": [0, 100]},
+            "height": 400, "width": 500,
+            "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "rgba(0,0,0,0)"
+        }
+    },
+    "page3_reusoAgua": {
+        "data": [
+            { "x": ["Sem práticas sustentáveis", "Com práticas sustentáveis"], "y": [100, 35], "type": "bar", "marker": {"color": ["#d32f2f", "#388e3c"]} }
+        ],
+        "layout": {
+            "title": "Eficácia do Reúso de Água",
+            "yaxis": {"title": "Consumo Total de Água (%)", "range": [0, 100]},
+            "height": 400, "width": 500,
+            "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "rgba(0,0,0,0)"
+        }
+    },
+    "page3_eficienciaEnergeticaAgua": {
+        "data": [
+            { "x": ["Equipamentos antigos", "Servidores atualizados", "Energia limpa", "Reaproveitamento de água"], "y": [0, 30, 50, 85], "type": "bar", "marker": {"color": "#45a9d1"} }
+        ],
+        "layout": {
+            "title": "Redução no uso d'água por Estratégia",
+            "yaxis": {"title": "Redução no Uso d'água (%)", "range": [0, 100]},
+            "height": 500, "width": 600,
+            "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "rgba(0,0,0,0)"
+        }
+    },
+    "page4_aumentoLixoEletronico": {
+        "data": [
+            { "x": [2010, 2015, 2020, 2022, 2030], "y": [34, 42, 54, 62, 82], "type": "bar" }
+        ],
+        "layout": {
+            "title": "Aumento do lixo eletrônico (2010-2030), em milhões de toneladas",
+            "xaxis": {"title": "Ano"},
+            "yaxis": {"title": "Milhões de Toneladas"},
+            "height": 500, "width": 600,
+            "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "rgba(0,0,0,0)"
+        }
+    },
+    "page4_vidaUtilComputadores": {
+        "data": [
+            { "x": [2005, 2015], "y": [6, 3], "type": "scatter", "mode": "lines+markers" }
+        ],
+        "layout": {
+            "title": "A Redução da Vida Útil dos Computadores",
+            "xaxis": {"title": "Ano"},
+            "yaxis": {"title": "Vida Útil Média (em Anos)", "range": [0, 7]},
+            "height": 500, "width": 600,
+            "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "rgba(0,0,0,0)"
+        }
+    },
+    "page4_vidaUtilRealIdeal": {
+        "data": [
+            { "x": ["Celular", "Computadores", "Impressora", "Televisão"], "y": [3.0, 4.0, 4.0, 7.4], "type": "bar", "name": "Real" },
+            { "x": ["Celular", "Computadores", "Impressora", "Televisão"], "y": [5.3, 6.7, 6.8, 10], "type": "bar", "name": "Ideal" }
+        ],
+        "layout": {
+            "title": "Vida útil Real vs. Ideal (em anos)",
+            "barmode": "group",
+            "yaxis": {"title": "Anos"},
+            "height": 500, "width": 600,
+            "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "rgba(0,0,0,0)"
+        }
+    },
+    "page5_energiaEcosistemaDigital": {
+        "data": [
+            { "x": ["Data centers", "Redes de transmissão", "Total digital global"], "y": [340, 250, 590], "type": "bar" }
+        ],
+        "layout": {
+            "title": "Energia consumida pelo ecossistema digital mundial",
+            "yaxis": {"title": "Consumo de energia (TWh/ano)"},
+            "height": 500, "width": 600,
+            "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "rgba(0,0,0,0)"
+        }
+    },
+    "page5_dadosArmazenados": {
+        "data": {
+            "values": [54, 14, 32],
+            "labels": ["Dados escuros", "Dados raramente acessados", "Dados realmente úteis"],
+            "type": "pie", "hole": 0.4, "hoverinfo": "label+percent"
+        },
+        "layout": {
+            "title": "Dados armazenados mundialmente",
+            "height": 600, "width": 600, "showlegend": true,
+            "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "rgba(0,0,0,0)"
+        }
+    },
+    "page5_usoEnergiasRenovaveis": {
+        "data": [
+            { "x": [2015, 2020, 2024], "y": [40, 100, 100], "type": "scatter", "mode": "lines+markers", "name": "Google" },
+            { "x": [2015, 2020, 2024], "y": [35, 100, 100], "type": "scatter", "mode": "lines+markers", "name": "Microsoft" },
+            { "x": [2015, 2020, 2024], "y": [25, 65, 98], "type": "scatter", "mode": "lines+markers", "name": "Amazon" }
+        ],
+        "layout": {
+            "title": "Uso de energias renováveis (em %)",
+            "yaxis": {"title": "%", "range": [0, 100]},
+            "height": 500, "width": 600, "showlegend": true,
+            "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "rgba(0,0,0,0)"
         }
     }
 }
