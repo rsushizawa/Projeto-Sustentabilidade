@@ -1,0 +1,186 @@
+{
+    "page1":{
+        "graph1":{
+            "data":{
+                "values": [15, 18, 18, 24, 25],
+                "labels": ["Reduzir Espaço", "Melhorar Perfomance", "Menor Impacto Ambiental", "Reduzir Custos", "Reduzir Consumo de Energia"],
+                "marker": {
+                    "colors": ["#DBF1D6", "#75C477","#AEDEA7","#37A055","#0B7734"]
+                },
+                "domain": {"column": 0},
+                "name": "Green IT",
+                "hoverinfo": "label+percent+name",
+                "type": "pie"
+            },
+            "layout":{
+                "title": {
+                    "text": "Por que as empresas adotam a TI verde?"
+                },
+                "height": 600,
+                "width": 900,
+                "margin": {
+                "b": 40
+                },
+                "family": "font-Title",
+                "showlegend": true,
+                "paper_bgcolor": "rgba(0,0,0,0)",
+                "plot_bgcolor": "rgba(0,0,0,0)",
+                "grid": {"rows": 1, "columns": 1},
+                "annotations": [{
+                "x": 0,
+                "y": 0, 
+                "xref": "paper",
+                "yref": "paper",
+                "text": "<b>Fonte:</b> IFES (2013)",
+                "showarrow": false,
+                "xanchor": "left",
+                "yanchor": "bottom",
+                "font": 
+                {
+                    "size": 10,
+                    "color": "#0000000"
+                }
+                }]
+            } 
+        },
+        "graph2": {
+            "data": [
+                {
+                  "x": [
+                    2022,
+                    2023,
+                    2024,
+                    2025,
+                    2026
+                  ],
+                  "y": [
+                    460,
+                    500,
+                    550,
+                    600,
+                    650
+                  ],
+                  "name": "Projeção Otimista (com Green IT)",
+                  "type": "scatter",
+                  "mode": "lines+markers",
+                  "line": {
+                    "color": "rgb(60, 179, 113)",
+                    "width": 3
+                  },
+                  "marker": {
+                    "color": "rgb(60, 179, 113)",
+                    "size": 8
+                  }
+                },
+                {
+                  "x": [
+                    2022,
+                    2023,
+                    2024,
+                    2025,
+                    2026
+                  ],
+                  "y": [
+                    460,
+                    580,
+                    710,
+                    900,
+                    1050
+                  ],
+                  "name": "Projeção de Alta Demanda",
+                  "type": "scatter",
+                  "mode": "lines+markers",
+                  "line": {
+                    "color": "rgb(215, 60, 60)",
+                    "width": 3,
+                    "dash": "dot"
+                  },
+                  "marker": {
+                    "color": "rgb(215, 60, 60)",
+                    "size": 8
+                  }
+                },
+                {
+                  "x": [
+                    2022,
+                    2023,
+                    2024,
+                    2025,
+                    2026,
+                    2026,
+                    2025,
+                    2024,
+                    2023,
+                    2022
+                  ],
+                  "y": [
+                    460,
+                    580,
+                    710,
+                    900,
+                    1050,
+                    650,
+                    600,
+                    550,
+                    500,
+                    460
+                  ],
+                  "name": "Economia Potencial",
+                  "type": "scatter",
+                  "mode": "none",
+                  "fill": "toself",
+                  "fillcolor": "rgba(215, 60, 60, 0.4)",
+                  "line": {
+                    "color": "transparent"
+                  },
+                  "showlegend": true
+                }
+            ],
+            "layout": {
+                "title": "Projeção do Consumo Global de Energia por Data Centers",
+                "xaxis": {
+                  "title": "Ano",
+                  "tickvals": [
+                    2022,
+                    2023,
+                    2024,
+                    2025,
+                    2026
+                  ],
+                  "showgrid": true,
+                  "gridcolor": "#eee",
+                  "griddash": "dash"
+                },
+                "yaxis": {
+                  "title": "Consumo de Eletricidade (TWh)",
+                  "range": [
+                    400,
+                    1100
+                  ],
+                  "showgrid": true,
+                  "gridcolor": "#eee",
+                  "griddash": "dash"
+                },
+                "legend": {
+                  "x": 0.01,
+                  "y": 0.99,
+                  "bordercolor": "#444",
+                  "borderwidth": 1
+                },
+                "plot_bgcolor": "white",
+                "annotations": [
+                  {
+                    "text": "<i>Fonte: Agência Internacional de Energia (IEA) - Relatório Electricity 2024</i>",
+                    "showarrow": false,
+                    "xref": "paper",
+                    "yref": "paper",
+                    "x": 0.5,
+                    "y": -0.15,
+                    "xanchor": "center",
+                    "yanchor": "top"
+                  }
+                ]
+            }
+        }
+    }
+}
